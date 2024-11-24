@@ -21,6 +21,8 @@ class ViewController: UIViewController {
                     
         
         mainScreen.floatingButtonSignUp.addTarget(self, action: #selector(onButtonSignUpTapped), for: .touchUpInside)
+        
+        mainScreen.buttonSeeMyProfile.addTarget(self, action: #selector(onButtonSeeMyProfileTapped), for: .touchUpInside)
         }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -37,6 +39,24 @@ class ViewController: UIViewController {
                    
                     self.mainScreen.floatingButtonLogIn.isHidden = false
                     self.mainScreen.floatingButtonSignUp.isHidden = false
+                    
+                    self.mainScreen.logoImage.isHidden = false
+                    
+                    self.mainScreen.buttonYourGroups.isEnabled = false
+                    self.mainScreen.buttonCreateGroups.isEnabled = false
+                    self.mainScreen.buttonJoinAGroup.isEnabled = false
+                    self.mainScreen.buttonSeeMyProfile.isEnabled = false
+                    
+                    
+                    self.mainScreen.buttonYourGroups.isHidden = true
+                    self.mainScreen.buttonCreateGroups.isHidden = true
+                    self.mainScreen.buttonJoinAGroup.isHidden = true
+                    self.mainScreen.buttonSeeMyProfile.isHidden = true
+                    
+                    
+                    
+                    
+                    
                     self.setupRightBarButton(isLoggedin: false)
                     
                 }else{
@@ -48,7 +68,22 @@ class ViewController: UIViewController {
                    
                     self.mainScreen.floatingButtonLogIn.isHidden = true
                     self.mainScreen.floatingButtonSignUp.isHidden = true
+                    
+                    self.mainScreen.buttonYourGroups.isEnabled = true
+                    self.mainScreen.buttonCreateGroups.isEnabled = true
+                    self.mainScreen.buttonJoinAGroup.isEnabled = true
+                    self.mainScreen.buttonSeeMyProfile.isEnabled = true
+                    self.mainScreen.logoImage.isHidden = true
+                    
+                    
+                    self.mainScreen.buttonYourGroups.isHidden = false
+                    self.mainScreen.buttonCreateGroups.isHidden = false
+                    self.mainScreen.buttonJoinAGroup.isHidden = false
+                    self.mainScreen.buttonSeeMyProfile.isHidden = false
+                    
+                    
                     self.setupRightBarButton(isLoggedin: true)
+                    
                 }
             }
         }
@@ -140,6 +175,13 @@ class ViewController: UIViewController {
                 print("Wrong user")
             }
         })
+    }
+    @objc func onButtonSeeMyProfileTapped(){
+        let profileViewController = ProfileScreenViewController()
+        profileViewController.currentUser = self.currentUser
+        self.navigationController?.pushViewController(profileViewController, animated: true)
+        
+        
     }
 
 

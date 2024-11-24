@@ -26,6 +26,14 @@
 		1BAA58852CF1407A0049E4B3 /* ProgressSpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAA58842CF1407A0049E4B3 /* ProgressSpinnerViewController.swift */; };
 		1BAA58872CF141BE0049E4B3 /* ProgressSpinnerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAA58862CF141BE0049E4B3 /* ProgressSpinnerDelegate.swift */; };
 		1BAA58892CF142910049E4B3 /* RegisterProgressIndicatorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAA58882CF142910049E4B3 /* RegisterProgressIndicatorManager.swift */; };
+		1BAA588C2CF230120049E4B3 /* ProfileScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAA588B2CF230120049E4B3 /* ProfileScreenView.swift */; };
+		1BAA588F2CF230B70049E4B3 /* ProfileScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAA588E2CF230B70049E4B3 /* ProfileScreenViewController.swift */; };
+		1BAA58922CF234A20049E4B3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAA58912CF234A20049E4B3 /* User.swift */; };
+		1BAA58942CF26C0A0049E4B3 /* PhotoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAA58932CF26C0A0049E4B3 /* PhotoManager.swift */; };
+		1BAA58962CF27F3B0049E4B3 /* ImageViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAA58952CF27F3B0049E4B3 /* ImageViewUtils.swift */; };
+		1BAA58982CF287410049E4B3 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BAA58972CF287410049E4B3 /* logo.png */; };
+		1BAA589A2CF2C0CD0049E4B3 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAA58992CF2C0CD0049E4B3 /* EditProfileViewController.swift */; };
+		1BAA589C2CF2C0ED0049E4B3 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAA589B2CF2C0ED0049E4B3 /* EditProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +54,14 @@
 		1BAA58842CF1407A0049E4B3 /* ProgressSpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressSpinnerViewController.swift; sourceTree = "<group>"; };
 		1BAA58862CF141BE0049E4B3 /* ProgressSpinnerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressSpinnerDelegate.swift; sourceTree = "<group>"; };
 		1BAA58882CF142910049E4B3 /* RegisterProgressIndicatorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterProgressIndicatorManager.swift; sourceTree = "<group>"; };
+		1BAA588B2CF230120049E4B3 /* ProfileScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreenView.swift; sourceTree = "<group>"; };
+		1BAA588E2CF230B70049E4B3 /* ProfileScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreenViewController.swift; sourceTree = "<group>"; };
+		1BAA58912CF234A20049E4B3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		1BAA58932CF26C0A0049E4B3 /* PhotoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoManager.swift; sourceTree = "<group>"; };
+		1BAA58952CF27F3B0049E4B3 /* ImageViewUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewUtils.swift; sourceTree = "<group>"; };
+		1BAA58972CF287410049E4B3 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		1BAA58992CF2C0CD0049E4B3 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		1BAA589B2CF2C0ED0049E4B3 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,13 +98,17 @@
 		1B88DCA42CEE9E3500848F4B /* iosfinal */ = {
 			isa = PBXGroup;
 			children = (
+				1BAA58952CF27F3B0049E4B3 /* ImageViewUtils.swift */,
+				1BAA588A2CF22F100049E4B3 /* ProfileScreen */,
 				1BAA58832CF140080049E4B3 /* Progress Indicator */,
 				1BAA587A2CF12D7C0049E4B3 /* Register Screen */,
 				1B88DCA52CEE9E3500848F4B /* AppDelegate.swift */,
 				1B88DCA72CEE9E3500848F4B /* SceneDelegate.swift */,
+				1BAA58902CF234520049E4B3 /* DataModels */,
 				1BAA58742CEFE0150049E4B3 /* MainScreen */,
 				1B88DCAB2CEE9E3600848F4B /* Main.storyboard */,
 				1B88DCAE2CEE9E3B00848F4B /* Assets.xcassets */,
+				1BAA58972CF287410049E4B3 /* logo.png */,
 				1B88DCB02CEE9E3B00848F4B /* LaunchScreen.storyboard */,
 				1B88DCB32CEE9E3B00848F4B /* Info.plist */,
 				1B88DCB92CEEA00D00848F4B /* GoogleService-Info.plist */,
@@ -121,6 +141,7 @@
 				1BAA587F2CF131A50049E4B3 /* RegisterViewController.swift */,
 				1BAA58812CF1351A0049E4B3 /* RegisterFirebaseManager.swift */,
 				1BAA58882CF142910049E4B3 /* RegisterProgressIndicatorManager.swift */,
+				1BAA58932CF26C0A0049E4B3 /* PhotoManager.swift */,
 			);
 			path = "Register Screen";
 			sourceTree = "<group>";
@@ -140,6 +161,33 @@
 				1BAA58862CF141BE0049E4B3 /* ProgressSpinnerDelegate.swift */,
 			);
 			path = "Progress Indicator";
+			sourceTree = "<group>";
+		};
+		1BAA588A2CF22F100049E4B3 /* ProfileScreen */ = {
+			isa = PBXGroup;
+			children = (
+				1BAA588D2CF230260049E4B3 /* EditProfileScreen */,
+				1BAA588B2CF230120049E4B3 /* ProfileScreenView.swift */,
+				1BAA588E2CF230B70049E4B3 /* ProfileScreenViewController.swift */,
+			);
+			path = ProfileScreen;
+			sourceTree = "<group>";
+		};
+		1BAA588D2CF230260049E4B3 /* EditProfileScreen */ = {
+			isa = PBXGroup;
+			children = (
+				1BAA58992CF2C0CD0049E4B3 /* EditProfileViewController.swift */,
+				1BAA589B2CF2C0ED0049E4B3 /* EditProfileView.swift */,
+			);
+			path = EditProfileScreen;
+			sourceTree = "<group>";
+		};
+		1BAA58902CF234520049E4B3 /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				1BAA58912CF234A20049E4B3 /* User.swift */,
+			);
+			path = DataModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B88DCB22CEE9E3B00848F4B /* LaunchScreen.storyboard in Resources */,
+				1BAA58982CF287410049E4B3 /* logo.png in Resources */,
 				1B88DCBA2CEEA00D00848F4B /* GoogleService-Info.plist in Resources */,
 				1B88DCAF2CEE9E3B00848F4B /* Assets.xcassets in Resources */,
 				1B88DCAD2CEE9E3600848F4B /* Main.storyboard in Resources */,
@@ -223,16 +272,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BAA589C2CF2C0ED0049E4B3 /* EditProfileView.swift in Sources */,
 				1B88DCC42CEEA23300848F4B /* AppDelegate.swift in Sources */,
 				1BAA58822CF1351A0049E4B3 /* RegisterFirebaseManager.swift in Sources */,
 				1BAA58852CF1407A0049E4B3 /* ProgressSpinnerViewController.swift in Sources */,
+				1BAA58942CF26C0A0049E4B3 /* PhotoManager.swift in Sources */,
 				1BAA58892CF142910049E4B3 /* RegisterProgressIndicatorManager.swift in Sources */,
 				1BAA58792CF124600049E4B3 /* RightBarButtonManager.swift in Sources */,
 				1BAA58802CF131A50049E4B3 /* RegisterViewController.swift in Sources */,
+				1BAA58922CF234A20049E4B3 /* User.swift in Sources */,
 				1BAA58872CF141BE0049E4B3 /* ProgressSpinnerDelegate.swift in Sources */,
 				1B88DCAA2CEE9E3500848F4B /* ViewController.swift in Sources */,
+				1BAA589A2CF2C0CD0049E4B3 /* EditProfileViewController.swift in Sources */,
+				1BAA588F2CF230B70049E4B3 /* ProfileScreenViewController.swift in Sources */,
 				1BAA587D2CF12FAC0049E4B3 /* RegisterView.swift in Sources */,
 				1B88DCA82CEE9E3500848F4B /* SceneDelegate.swift in Sources */,
+				1BAA588C2CF230120049E4B3 /* ProfileScreenView.swift in Sources */,
+				1BAA58962CF27F3B0049E4B3 /* ImageViewUtils.swift in Sources */,
 				1BAA58772CEFE06D0049E4B3 /* MainScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
