@@ -34,6 +34,7 @@
 		1BAA58982CF287410049E4B3 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BAA58972CF287410049E4B3 /* logo.png */; };
 		1BAA589A2CF2C0CD0049E4B3 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAA58992CF2C0CD0049E4B3 /* EditProfileViewController.swift */; };
 		1BAA589C2CF2C0ED0049E4B3 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAA589B2CF2C0ED0049E4B3 /* EditProfileView.swift */; };
+		1BAA589E2CF558D00049E4B3 /* EditProfilePhotoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAA589D2CF558D00049E4B3 /* EditProfilePhotoManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		1BAA58972CF287410049E4B3 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		1BAA58992CF2C0CD0049E4B3 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		1BAA589B2CF2C0ED0049E4B3 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
+		1BAA589D2CF558D00049E4B3 /* EditProfilePhotoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfilePhotoManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +180,7 @@
 			children = (
 				1BAA58992CF2C0CD0049E4B3 /* EditProfileViewController.swift */,
 				1BAA589B2CF2C0ED0049E4B3 /* EditProfileView.swift */,
+				1BAA589D2CF558D00049E4B3 /* EditProfilePhotoManager.swift */,
 			);
 			path = EditProfileScreen;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 			files = (
 				1BAA589C2CF2C0ED0049E4B3 /* EditProfileView.swift in Sources */,
 				1B88DCC42CEEA23300848F4B /* AppDelegate.swift in Sources */,
+				1BAA589E2CF558D00049E4B3 /* EditProfilePhotoManager.swift in Sources */,
 				1BAA58822CF1351A0049E4B3 /* RegisterFirebaseManager.swift in Sources */,
 				1BAA58852CF1407A0049E4B3 /* ProgressSpinnerViewController.swift in Sources */,
 				1BAA58942CF26C0A0049E4B3 /* PhotoManager.swift in Sources */,

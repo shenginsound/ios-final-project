@@ -66,7 +66,7 @@ class RegisterViewController: UIViewController {
         configuration.filter = PHPickerFilter.any(of: [.images])
         configuration.selectionLimit = 1
         
-        let photoPicker = PHPickerViewController(configuration: configuration)
+        let photoPicker  = PHPickerViewController(configuration: configuration)
         
         photoPicker.delegate = self
         present(photoPicker, animated: true, completion: nil)

@@ -23,6 +23,7 @@ class ViewController: UIViewController {
         mainScreen.floatingButtonSignUp.addTarget(self, action: #selector(onButtonSignUpTapped), for: .touchUpInside)
         
         mainScreen.buttonSeeMyProfile.addTarget(self, action: #selector(onButtonSeeMyProfileTapped), for: .touchUpInside)
+        
         }
     
     override func viewWillAppear(_ animated: Bool) {

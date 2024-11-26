@@ -28,6 +28,7 @@ class ProfileScreenViewController: UIViewController {
             self.profileScreen.labelUserName.text = "User Name: \(username)"
             
         }
+        profileScreen.buttonEditProfile.addTarget(self, action: #selector(onButtonEditProfileTapped), for: .touchUpInside)
        
         
     }
@@ -40,6 +41,13 @@ class ProfileScreenViewController: UIViewController {
             super.viewWillDisappear(animated)
             
         }
+    
+    @objc func onButtonEditProfileTapped(){
+        let editProfileViewController = EditProfileViewController()
+        editProfileViewController.currentUser = self.currentUser
+        self.navigationController?.pushViewController(editProfileViewController, animated: true)
+        
+    }
     
 
     /*

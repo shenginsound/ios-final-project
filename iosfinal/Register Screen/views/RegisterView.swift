@@ -71,7 +71,7 @@ class RegisterView: UIView {
         
     func setupbuttonTakePhoto(){
         buttonTakePhoto = UIButton(type: .system)
-        buttonTakePhoto.setTitle("", for: .normal)
+        buttonTakePhoto.setTitle("Tap me", for: .normal)
         buttonTakePhoto.setImage(UIImage(systemName: "camera.fill")?.withRenderingMode(.alwaysOriginal), for: .normal)
         //buttonTakePhoto.setImage(UIImage(systemName: "camera.fill")?.withRenderingMode(.alwaysOriginal), for: .normal)
         buttonTakePhoto.contentHorizontalAlignment = .fill
