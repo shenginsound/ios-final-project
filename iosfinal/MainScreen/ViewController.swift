@@ -173,7 +173,7 @@ class ViewController: UIViewController {
                 //MARK: can you hide the progress indicator here?
             }else{
                 //MARK: alert that no user found or password wrong..
-                print("Wrong user")
+                self.showWrongUserError()
             }
         })
     }
@@ -184,6 +184,13 @@ class ViewController: UIViewController {
         
         
     }
+    func showWrongUserError(){
+        let alert = UIAlertController(title: "Error!", message: "Your Email or password is wrong, please go to check and login again", preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "OK", style: .default))
+        
+        self.present(alert, animated: true)
+        }
 
 
 }
