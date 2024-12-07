@@ -27,7 +27,7 @@ extension EditProfileViewController:PHPickerViewControllerDelegate{
                     completionHandler: { (image, error) in
                         DispatchQueue.main.async{
                             if let uwImage = image as? UIImage{
-                                // set button take a photo image to selected photo
+                                
 //                                self.editProfileView.buttonTakeEditPhoto.setImage(
 //                                    uwImage.withRenderingMode(.alwaysOriginal),
 //                                    for: .normal

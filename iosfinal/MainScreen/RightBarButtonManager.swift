@@ -74,6 +74,7 @@ extension ViewController{
             if let email = signInAlert.textFields![0].text,
                let password = signInAlert.textFields![1].text{
                 //MARK: sign-in logic for Firebase...
+                self.signInToFirebase(email: email, password: password)
                 
             }
         })
