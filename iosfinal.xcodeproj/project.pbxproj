@@ -35,6 +35,11 @@
 		1BAA589A2CF2C0CD0049E4B3 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAA58992CF2C0CD0049E4B3 /* EditProfileViewController.swift */; };
 		1BAA589C2CF2C0ED0049E4B3 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAA589B2CF2C0ED0049E4B3 /* EditProfileView.swift */; };
 		1BAA589E2CF558D00049E4B3 /* EditProfilePhotoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAA589D2CF558D00049E4B3 /* EditProfilePhotoManager.swift */; };
+		1BAA58C92D0653860049E4B3 /* BillItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAA58C82D0653860049E4B3 /* BillItem.swift */; };
+		1BAA58CC2D0654990049E4B3 /* PostBillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAA58CB2D0654990049E4B3 /* PostBillViewController.swift */; };
+		1BAA58CF2D0655F10049E4B3 /* BillDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAA58CE2D0655F10049E4B3 /* BillDetailsViewController.swift */; };
+		1BAA58D12D0656B30049E4B3 /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAA58D02D0656B20049E4B3 /* UserDetailsViewController.swift */; };
+		1BAA58D32D06583E0049E4B3 /* BillListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAA58C62D0652EF0049E4B3 /* BillListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +69,11 @@
 		1BAA58992CF2C0CD0049E4B3 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		1BAA589B2CF2C0ED0049E4B3 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 		1BAA589D2CF558D00049E4B3 /* EditProfilePhotoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfilePhotoManager.swift; sourceTree = "<group>"; };
+		1BAA58C62D0652EF0049E4B3 /* BillListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillListViewController.swift; sourceTree = "<group>"; };
+		1BAA58C82D0653860049E4B3 /* BillItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillItem.swift; sourceTree = "<group>"; };
+		1BAA58CB2D0654990049E4B3 /* PostBillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostBillViewController.swift; sourceTree = "<group>"; };
+		1BAA58CE2D0655F10049E4B3 /* BillDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillDetailsViewController.swift; sourceTree = "<group>"; };
+		1BAA58D02D0656B20049E4B3 /* UserDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +110,7 @@
 		1B88DCA42CEE9E3500848F4B /* iosfinal */ = {
 			isa = PBXGroup;
 			children = (
+				1BAA58C52D0652080049E4B3 /* BillList Screen */,
 				1BAA58952CF27F3B0049E4B3 /* ImageViewUtils.swift */,
 				1BAA588A2CF22F100049E4B3 /* ProfileScreen */,
 				1BAA58832CF140080049E4B3 /* Progress Indicator */,
@@ -189,8 +200,20 @@
 			isa = PBXGroup;
 			children = (
 				1BAA58912CF234A20049E4B3 /* User.swift */,
+				1BAA58C82D0653860049E4B3 /* BillItem.swift */,
 			);
 			path = DataModels;
+			sourceTree = "<group>";
+		};
+		1BAA58C52D0652080049E4B3 /* BillList Screen */ = {
+			isa = PBXGroup;
+			children = (
+				1BAA58C62D0652EF0049E4B3 /* BillListViewController.swift */,
+				1BAA58CB2D0654990049E4B3 /* PostBillViewController.swift */,
+				1BAA58CE2D0655F10049E4B3 /* BillDetailsViewController.swift */,
+				1BAA58D02D0656B20049E4B3 /* UserDetailsViewController.swift */,
+			);
+			path = "BillList Screen";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +301,7 @@
 				1BAA589C2CF2C0ED0049E4B3 /* EditProfileView.swift in Sources */,
 				1B88DCC42CEEA23300848F4B /* AppDelegate.swift in Sources */,
 				1BAA589E2CF558D00049E4B3 /* EditProfilePhotoManager.swift in Sources */,
+				1BAA58C92D0653860049E4B3 /* BillItem.swift in Sources */,
 				1BAA58822CF1351A0049E4B3 /* RegisterFirebaseManager.swift in Sources */,
 				1BAA58852CF1407A0049E4B3 /* ProgressSpinnerViewController.swift in Sources */,
 				1BAA58942CF26C0A0049E4B3 /* PhotoManager.swift in Sources */,
@@ -287,9 +311,13 @@
 				1BAA58922CF234A20049E4B3 /* User.swift in Sources */,
 				1BAA58872CF141BE0049E4B3 /* ProgressSpinnerDelegate.swift in Sources */,
 				1B88DCAA2CEE9E3500848F4B /* ViewController.swift in Sources */,
+				1BAA58D32D06583E0049E4B3 /* BillListViewController.swift in Sources */,
 				1BAA589A2CF2C0CD0049E4B3 /* EditProfileViewController.swift in Sources */,
+				1BAA58D12D0656B30049E4B3 /* UserDetailsViewController.swift in Sources */,
 				1BAA588F2CF230B70049E4B3 /* ProfileScreenViewController.swift in Sources */,
+				1BAA58CF2D0655F10049E4B3 /* BillDetailsViewController.swift in Sources */,
 				1BAA587D2CF12FAC0049E4B3 /* RegisterView.swift in Sources */,
+				1BAA58CC2D0654990049E4B3 /* PostBillViewController.swift in Sources */,
 				1B88DCA82CEE9E3500848F4B /* SceneDelegate.swift in Sources */,
 				1BAA588C2CF230120049E4B3 /* ProfileScreenView.swift in Sources */,
 				1BAA58962CF27F3B0049E4B3 /* ImageViewUtils.swift in Sources */,
