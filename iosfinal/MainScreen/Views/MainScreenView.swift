@@ -18,6 +18,7 @@ class MainScreenView: UIView {
     var buttonCreateGroups: UIButton!
     var buttonJoinAGroup: UIButton!
     var buttonSeeMyProfile: UIButton!
+    var buttonSeeMyBill: UIButton!
     
     
     
@@ -36,6 +37,7 @@ class MainScreenView: UIView {
             setupButtonCreateGroups()
             setupButtonJoinAGroup()
             setupButtonSeeMyProfile()
+            setupButtonSeeMyBill()
             
             initConstraints()
         }
@@ -113,6 +115,15 @@ class MainScreenView: UIView {
         
         
     }
+    func setupButtonSeeMyBill(){
+        buttonSeeMyBill = UIButton(type: .system)
+        buttonSeeMyBill.titleLabel?.font = .boldSystemFont(ofSize: 20)
+        buttonSeeMyBill.setTitle("See My Bill", for: .normal)
+        buttonSeeMyBill.translatesAutoresizingMaskIntoConstraints = false
+        self.addSubview(buttonSeeMyBill)
+        
+        
+    }
     
     func initConstraints(){
             NSLayoutConstraint.activate([
@@ -144,7 +155,8 @@ class MainScreenView: UIView {
                 
                 buttonSeeMyProfile.centerXAnchor.constraint(equalTo:  self.centerXAnchor),
                 buttonSeeMyProfile.topAnchor.constraint(equalTo: buttonJoinAGroup.bottomAnchor, constant: 16),
-                
+                buttonSeeMyBill.centerXAnchor.constraint(equalTo:  self.centerXAnchor),
+                buttonSeeMyBill.topAnchor.constraint(equalTo: buttonSeeMyProfile.bottomAnchor, constant: 16),
                 
 
 

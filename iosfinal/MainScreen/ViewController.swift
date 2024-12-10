@@ -24,6 +24,8 @@ class ViewController: UIViewController {
         
         mainScreen.buttonSeeMyProfile.addTarget(self, action: #selector(onButtonSeeMyProfileTapped), for: .touchUpInside)
         
+        mainScreen.buttonSeeMyBill.addTarget(self, action: #selector(onButtonSeeMyBillTapped), for: .touchUpInside)
+        
         }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -47,12 +49,14 @@ class ViewController: UIViewController {
                     self.mainScreen.buttonCreateGroups.isEnabled = false
                     self.mainScreen.buttonJoinAGroup.isEnabled = false
                     self.mainScreen.buttonSeeMyProfile.isEnabled = false
+                    self.mainScreen.buttonSeeMyBill.isEnabled = false
                     
                     
                     self.mainScreen.buttonYourGroups.isHidden = true
                     self.mainScreen.buttonCreateGroups.isHidden = true
                     self.mainScreen.buttonJoinAGroup.isHidden = true
                     self.mainScreen.buttonSeeMyProfile.isHidden = true
+                    self.mainScreen.buttonSeeMyBill.isHidden = true
                     
                     
                     
@@ -75,13 +79,14 @@ class ViewController: UIViewController {
                     self.mainScreen.buttonJoinAGroup.isEnabled = true
                     self.mainScreen.buttonSeeMyProfile.isEnabled = true
                     self.mainScreen.logoImage.isHidden = true
+                    self.mainScreen.buttonSeeMyBill.isEnabled = true
                     
                     
                     self.mainScreen.buttonYourGroups.isHidden = false
                     self.mainScreen.buttonCreateGroups.isHidden = false
                     self.mainScreen.buttonJoinAGroup.isHidden = false
                     self.mainScreen.buttonSeeMyProfile.isHidden = false
-                    
+                    self.mainScreen.buttonSeeMyBill.isHidden = false
                     
                     self.setupRightBarButton(isLoggedin: true)
                     
@@ -182,6 +187,12 @@ class ViewController: UIViewController {
         profileViewController.currentUser = self.currentUser
         self.navigationController?.pushViewController(profileViewController, animated: true)
         
+        
+    }
+    @objc func onButtonSeeMyBillTapped(){
+        let BillListViewController = BillListViewController()
+            BillListViewController.currentUser = self.currentUser
+        self.navigationController?.pushViewController(BillListViewController, animated: true)
         
     }
     func showWrongUserError(){

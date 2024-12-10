@@ -15,6 +15,7 @@ class BillListViewController: UIViewController, UITableViewDelegate, UITableView
     var bills: [BillItem] = []
     var tableView: UITableView!
     var myDetailsButton: UIButton!
+    var currentUser:FirebaseAuth.User?
 
     override func viewDidLoad() {
         super.viewDidLoad()
